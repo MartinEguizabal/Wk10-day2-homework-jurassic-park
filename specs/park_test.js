@@ -49,4 +49,9 @@ describe("Park", function() {
     park.addDinosaur(dinosaur5);
     assert.strictEqual(park.getDinosaursOffsping2Plus(), 2);
   })
+
+  it("get dinosaurs after one year with 1 dinosaur", function(){
+    park.addDinosaur(dinosaur1);
+    assert.strictEqual(park.dinosaurOffspring(1), 2);
+  })
 })
